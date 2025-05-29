@@ -81,6 +81,7 @@
     }
 
     h2 {
+      text-align: center;
       font-size: 1.6rem;
       margin-top: 40px;
       color: #2c3e50;
@@ -137,7 +138,33 @@
   </video>
 
   <h2>Description</h2>
-Recent video diffusion models have demonstrated their great capability in generating visually-pleasing results, while synthesizing the correct physical effects in generated videos remains challenging. The complexity of real-world motions, interactions, and dynamics introduce great difficulties when learning physics from data. In this work, we propose DiffPhy, a generic framework that enables physically-correct and photo-realistic video generation by fine-tuning a pre-trained video diffusion model. Our method leverages large language models (LLMs) to explicitly reason a comprehensive physical context from the text prompt and use it to guide the generation. To incorporate physical context into the diffusion model, we leverage a Multimodal large language model (MLLM) as a supervisory signal and introduce a set of novel training objectives that jointly enforce physical correctness and semantic consistency with the input text. We also establish a high-quality physical video dataset containing diverse phyiscal-related actions and events to facilitate effective finetuning. Extensive experiments on public benchmarks, demonstrate that DiffPhy is able to produce state-of-the-art results across diverse physical scenarios. Our model and data will be released soon.
+<h2>Description</h2>
+<p>
+  <strong>DiffPhy</strong> is a novel framework for generating physics-aware and photo-realistic videos by fine-tuning pre-trained video diffusion models. This is achieved with the help of large language models and physical context reasoning. Here's an overview:
+</p>
+
+<ul>
+  <li>
+    <strong>Challenge:</strong> Existing video diffusion models struggle to capture correct physical dynamics such as real-world motion, interactions, and temporal consistency.
+  </li>
+  <li>
+    <strong>Our Solution — DiffPhy:</strong> A generic fine-tuning framework designed to guide video diffusion models using Large Language Models (LLMs) for physical context reasoning.
+  </li>
+  <li>
+    <strong>How It Works:</strong>
+    <ul>
+      <li>Extracts rich physical context from prompts using LLMs.</li>
+      <li>Leverages a Multimodal LLM (MLLM) as a supervisory signal.</li>
+      <li>Applies novel training objectives to ensure both physical accuracy and semantic alignment.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Dataset:</strong> We establish a new, high-quality video dataset rich in physics-related scenes (e.g., collisions, fluids, gravity-influenced motion).
+  </li>
+  <li>
+    <strong>Results:</strong> Extensive experiments on public benchmarks show that DiffPhy achieves state-of-the-art performance in physically plausible video generation.
+  </li>
+</ul>
 
   <div class="footer">
     © 2025 Ke Zhang et al. — Contact: kezhang [at] jhu.edu
