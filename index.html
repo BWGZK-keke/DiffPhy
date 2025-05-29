@@ -137,21 +137,7 @@
   </video>
 
   <h2>Description</h2>
-  <p>
-    Recent <span style="color:#1e90ff; font-weight:bold;">video diffusion models</span> have demonstrated their great capability in generating <span style="color:#16a085; font-weight:bold;">visually-pleasing results</span>, while synthesizing the correct <span style="color:#d35400; font-weight:bold;">physical effects</span> in generated videos remains challenging. The complexity of <span style="color:#9b59b6; font-weight:bold;">real-world motions</span>, <span style="color:#9b59b6; font-weight:bold;">interactions</span>, and <span style="color:#9b59b6; font-weight:bold;">dynamics</span> introduces great difficulties when learning physics from data.
-  </p>
-
-  <p>
-    In this work, we propose <strong style="color:#e74c3c;">DiffPhy</strong>, a <span style="color:#2980b9;">generic framework</span> that enables <span style="color:#e67e22; font-weight:bold;">physically-correct</span> and <span style="color:#e67e22; font-weight:bold;">photo-realistic</span> video generation by fine-tuning a <span style="color:#2c3e50; font-weight:bold;">pre-trained video diffusion model</span>. Our method leverages <span style="color:#8e44ad; font-weight:bold;">large language models (LLMs)</span> to explicitly reason a <span style="color:#27ae60; font-weight:bold;">comprehensive physical context</span> from the text prompt and use it to guide the generation.
-  </p>
-
-  <p>
-    To incorporate physical context into the diffusion model, we leverage a <span style="color:#8e44ad; font-weight:bold;">Multimodal Large Language Model (MLLM)</span> as a <span style="color:#c0392b;">supervisory signal</span> and introduce a set of <span style="color:#34495e; font-weight:bold;">novel training objectives</span> that jointly enforce <span style="color:#e67e22; font-weight:bold;">physical correctness</span> and <span style="color:#3498db; font-weight:bold;">semantic consistency</span> with the input text.
-  </p>
-
-  <p>
-    We also establish a <span style="color:#f39c12; font-weight:bold;">high-quality physical video dataset</span> containing diverse <span style="color:#d35400;">physics-related actions and events</span> to facilitate effective fine-tuning. Extensive experiments on <span style="color:#2ecc71; font-weight:bold;">public benchmarks</span> demonstrate that <strong style="color:#e74c3c;">DiffPhy</strong> is able to produce <span style="color:#27ae60; font-weight:bold;">state-of-the-art results</span> across diverse <span style="color:#9b59b6;">physical scenarios</span>.
-  </p>
+Recent video diffusion models have demonstrated their great capability in generating visually-pleasing results, while synthesizing the correct physical effects in generated videos remains challenging. The complexity of real-world motions, interactions, and dynamics introduce great difficulties when learning physics from data. In this work, we propose DiffPhy, a generic framework that enables physically-correct and photo-realistic video generation by fine-tuning a pre-trained video diffusion model. Our method leverages large language models (LLMs) to explicitly reason a comprehensive physical context from the text prompt and use it to guide the generation. To incorporate physical context into the diffusion model, we leverage a Multimodal large language model (MLLM) as a supervisory signal and introduce a set of novel training objectives that jointly enforce physical correctness and semantic consistency with the input text. We also establish a high-quality physical video dataset containing diverse phyiscal-related actions and events to facilitate effective finetuning. Extensive experiments on public benchmarks, demonstrate that DiffPhy is able to produce state-of-the-art results across diverse physical scenarios. Our model and data will be released soon.
 
   <div class="footer">
     © 2025 Ke Zhang et al. — Contact: kezhang [at] jhu.edu
