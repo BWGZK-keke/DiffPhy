@@ -5,7 +5,7 @@
   <title>Think Before You Diffuse: LLMs-guided Physics-Aware Video Generation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
+ <style>
     body {
       font-family: 'Inter', sans-serif;
       line-height: 1.6;
@@ -17,6 +17,7 @@
     }
 
     h1 {
+      text-align: center;
       font-size: 2.5rem;
       font-weight: 700;
       color: #1a1a1a;
@@ -34,24 +35,6 @@
       font-size: 1rem;
       color: #666;
       margin-bottom: 30px;
-    }
-
-    h2 {
-      font-size: 1.6rem;
-      margin-top: 40px;
-      color: #2c3e50;
-    }
-
-    p {
-      font-size: 1.05rem;
-      color: #333;
-    }
-
-    video {
-      max-width: 100%;
-      margin-top: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .links {
@@ -74,6 +57,39 @@
 
     .links a:hover {
       background-color: #005fa3;
+    }
+
+    .gif-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gif-stack img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 40px;
+      color: #2c3e50;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: #333;
+    }
+
+    video {
+      max-width: 100%;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .footer {
@@ -101,6 +117,12 @@
     <a href="#" onclick="alert('Model coming soon!')" style="background-color: #999999;">🧠 Model (Coming Soon)</a>
   </div>
 
+  <div class="gif-stack">
+    <img src="gif1.gif" alt="Demo GIF 1">
+    <img src="gif2.gif" alt="Demo GIF 2">
+    <img src="gif3.gif" alt="Demo GIF 3">
+  </div>
+  
   <h2>Demo Video</h2>
   <video controls>
     <source src="Demo-small.mp4" type="video/mp4">
