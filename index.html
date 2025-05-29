@@ -143,6 +143,40 @@
   .description-box ul ul li::marker {
     color: #888;
   }
+    .section-box {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    margin-top: 40px;
+  }
+
+  .section-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+  }
+
+  .pipeline-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+  }
+
+  .bibtex-box {
+    background-color: #f9f9f9;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-top: 16px;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    border-left: 4px solid #007acc;
+  }
   </style>
 </head>
 <body>
@@ -180,9 +214,26 @@
 Recent video diffusion models have demonstrated their great capability in generating visually-pleasing results, while synthesizing the correct physical effects in generated videos remains challenging. The complexity of real-world motions, interactions, and dynamics introduce great difficulties when learning physics from data. In this work, we propose DiffPhy, a generic framework that enables physically-correct and photo-realistic video generation by fine-tuning a pre-trained video diffusion model. Our method leverages large language models (LLMs) to explicitly reason a comprehensive physical context from the text prompt and use it to guide the generation. To incorporate physical context into the diffusion model, we leverage a Multimodal large language model (MLLM) as a supervisory signal and introduce a set of novel training objectives that jointly enforce physical correctness and semantic consistency with the input text. We also establish a high-quality physical video dataset containing diverse phyiscal-related actions and events to facilitate effective finetuning. Extensive experiments on public benchmarks, demonstrate that DiffPhy is able to produce state-of-the-art results across diverse physical scenarios. Our model and data will be released after the review process.
 </div>
 
-  <div class="footer">
-    © 2025 Ke Zhang et al. — Contact: kezhang [at] jhu.edu
+<!-- Method Pipeline -->
+<div class="section-box">
+  <h2>Method Pipeline</h2>
+  <img src="pipeline.pdf" alt="Method Pipeline Diagram" class="pipeline-img">
+</div>
+
+<!-- BibTeX Citation -->
+<div class="section-box">
+  <h2>BibTeX Citation</h2>
+  <div class="bibtex-box">
+@misc{zhang2025think,<br>
+&nbsp;&nbsp;title={Think Before You Diffuse: LLMs-Guided Physics-Aware Video Generation},<br>
+&nbsp;&nbsp;author={Ke Zhang and Cihan Xiao and Jiacong Xu and Yiqun Mei and Vishal M. Patel},<br>
+&nbsp;&nbsp;year={2025},<br>
+&nbsp;&nbsp;eprint={2505.21653},<br>
+&nbsp;&nbsp;archivePrefix={arXiv},<br>
+&nbsp;&nbsp;primaryClass={cs.CV}<br>
+}
   </div>
+</div>
 
 </body>
 </html>
