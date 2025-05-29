@@ -233,6 +233,13 @@ Recent video diffusion models have demonstrated their great capability in genera
       style="max-width: 100%; height: auto; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
     >
   </div>
+  <p style="margin-top: 20px; font-size: 1.05rem; line-height: 1.7; color: #333;">
+    <strong>An overview of DiffPhy.</strong> Our method contains five steps: <br>
+    1. Given a user prompt, we leverage a pretrained LLM to reason physical properties from the text input. <br>
+    2. We then (a) enhance the user prompt with physical context and (b) produce a list of relevant physical phenomena associated with the described event. <br>
+    3. We use the enhanced prompt to guide video generation. The phenomena list is used to penalize outputs with implausible physics. <br>
+    4. A set of novel training objectives are proposed to jointly enforce physical correctness and semantic consistency.
+  </p>
 </div>
 
 <!-- BibTeX Citation -->
