@@ -4,38 +4,83 @@
   <meta charset="UTF-8">
   <title>Think Before You Diffuse: LLMs-guided Physics-Aware Video Generation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       line-height: 1.6;
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
-      padding: 0 20px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
+      padding: 0 24px;
+      background-color: #f4f6f8;
       color: #2c3e50;
     }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    .authors,
+    .affiliation {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .affiliation {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
     h2 {
-      margin-top: 30px;
-      color: #34495e;
+      font-size: 1.6rem;
+      margin-top: 40px;
+      color: #2c3e50;
     }
-    .meta, .keywords {
-      font-size: 0.95em;
-      color: #555;
+
+    p {
+      font-size: 1.05rem;
+      color: #333;
     }
-    .authors {
-      margin: 10px 0;
-    }
+
     video {
       max-width: 100%;
       margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+
+    .links {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 16px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #007acc;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: #005fa3;
+    }
+
     .footer {
-      margin-top: 40px;
+      margin-top: 60px;
       font-size: 0.9em;
-      color: #888;
+      color: #777;
+      text-align: center;
     }
   </style>
 </head>
@@ -46,20 +91,34 @@
   <div class="authors">
     <strong>Ke Zhang</strong>, Cihan Xiao, Jiacong Xu, Yiqun Mei, Vishal M. Patel
   </div>
+  <div class="affiliation">
+    Johns Hopkins University
+  </div>
+
+  <div class="links">
+    <a href="https://arxiv.org/pdf/2505.21653" target="_blank">📄 Paper (arXiv)</a>
+    <a href="#" onclick="alert('Model coming soon!')", style="background-color: #999999;">💻 Code</a>
+    <a href="#" onclick="alert('Model coming soon!')" style="background-color: #999999;">🧠 Model (Coming Soon)</a>
+  </div>
 
   <h2>Demo Video</h2>
-  <!-- Replace 'video.mp4' with your actual video filename or YouTube iframe if needed -->
   <video controls>
     <source src="Demo-small.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
-
   <h2>Description</h2>
   <p>
-    Recent video diffusion models have demonstrated their great capability in generating visually-pleasing results, while synthesizing the correct physical effects in generated videos remains challenging. The complexity of real-world motions, interactions, and dynamics introduce great difficulties when learning physics from data. In this work, we propose <strong>DiffPhy</strong>, a generic framework that enables physically-correct and photo-realistic video generation by fine-tuning a pre-trained video diffusion model.
-    Our method leverages large language models (LLMs) to explicitly reason a comprehensive physical context from the text prompt and use it to guide the generation. To incorporate physical context into the diffusion model, we leverage a Multimodal large language model (MLLM) as a supervisory signal and introduce a set of novel training objectives that jointly enforce physical correctness and semantic consistency with the input text.
-    We also establish a high-quality physical video dataset containing diverse physical-related actions and events to facilitate effective finetuning. Extensive experiments on public benchmarks demonstrate that DiffPhy is able to produce state-of-the-art results across diverse physical scenarios. Our model and data will be released soon.
+    Recent video diffusion models have demonstrated their great capability in generating visually-pleasing results, while synthesizing the correct physical effects in generated videos remains challenging. The complexity of real-world motions, interactions, and dynamics introduce great difficulties when learning physics from data.
+  </p>
+  <p>
+    In this work, we propose <strong>DiffPhy</strong>, a generic framework that enables physically-correct and photo-realistic video generation by fine-tuning a pre-trained video diffusion model. Our method leverages large language models (LLMs) to explicitly reason a comprehensive physical context from the text prompt and use it to guide the generation.
+  </p>
+  <p>
+    To incorporate physical context into the diffusion model, we leverage a Multimodal Large Language Model (MLLM) as a supervisory signal and introduce a set of novel training objectives that jointly enforce physical correctness and semantic consistency with the input text.
+  </p>
+  <p>
+    We also establish a high-quality physical video dataset containing diverse physical-related actions and events to facilitate effective fine-tuning. Extensive experiments on public benchmarks demonstrate that DiffPhy is able to produce state-of-the-art results across diverse physical scenarios.
   </p>
 
   <div class="footer">
@@ -68,4 +127,3 @@
 
 </body>
 </html>
-
